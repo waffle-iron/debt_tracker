@@ -1,4 +1,3 @@
-import pip
 from django.http import HttpResponse
 
 from debug import Packages
