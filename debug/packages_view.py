@@ -6,7 +6,7 @@ def getView():
     html = "<h1>Required Packages:</h1>"
 
     for package in get_packages():
-        html += "<p>%s</p>" % package
+        html += "%s</br>" % package
 
     return HttpResponse(html)
 
