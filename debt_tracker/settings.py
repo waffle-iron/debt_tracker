@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug.apps.RequirementsConfig',
+    'debug.apps.DebugConfig',
+    'transaction.apps.TransactionConfig',
 ]
 
 MIDDLEWARE = [
@@ -71,11 +72,14 @@ WSGI_APPLICATION = 'debt_tracker.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'debt_tracker',
+        'USER': 'debt_tracker',
+        'PASSWORD': '925Q&F^tDU5F',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 

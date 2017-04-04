@@ -1,7 +1,8 @@
-appdirs==1.4.3
-django==1.10.6
-packaging==16.8
-pip==9.0.1
-pyparsing==2.2.0
-setuptools==28.8.0
-six==1.10.0
+appdirs 1.4.3
+six 1.10.0
+Django 1.10.6
+pyparsing 2.2.0
+psycopg2 2.7.1
+pip 9.0.1
+packaging 16.8
+setuptools 28.8.0

@@ -1,5 +1,11 @@
-from debug import packages_view
+import pip
+from django.shortcuts import render_to_response
 
 
 def requirements(request):
-    return packages_view.getView()
+    installed_packages = ""
+    installed_packages_list = sorted(pip.get_installed_distributions())
+
+    response = render_to_response('debug/requirements.html', locals())
+
+    return response
