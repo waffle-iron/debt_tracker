@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def getView():
-    html = "<h1>Required Packages:</h1>"
+    html = "<strong>Required Packages:</strong></br></br>"
 
     for package in get_packages():
         html += "%s</br>" % package
