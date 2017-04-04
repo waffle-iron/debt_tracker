@@ -1,8 +1,5 @@
-from django.http import HttpResponse
-
-from debug import Packages
+from debug import packages_view
 
 
 def requirements(request):
-    packages = Packages.getPackages()
-    return HttpResponse("Required Packages:\n" + packages)
+    return packages_view.getView()
