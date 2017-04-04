@@ -74,12 +74,12 @@ WSGI_APPLICATION = 'debt_tracker.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'debt_tracker',
         'USER': 'debt_tracker',
         'PASSWORD': '925Q&F^tDU5F',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
