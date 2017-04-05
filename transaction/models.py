@@ -9,6 +9,7 @@ class User(models.Model):
 
 # TODO move
 # TODO function to add default (USD, CHF, EUR) - https://docs.djangoproject.com/en/1.10/howto/initial-data/
+# TODO config file not better with default currency?
 class Currency(models.Model):
     name = models.CharField(max_length=20)
     code = models.CharField(max_length=3)
