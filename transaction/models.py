@@ -14,7 +14,7 @@ class Currency(models.Model):
 
 
 class Transaction(models.Model):
-    description = models.CharField(max_length=200)
+    description = models.TextField()
     amount = models.DecimalField(max_digits=6, decimal_places=2)
     currency = models.ForeignKey(Currency, related_name='currency')
     debtor = models.ForeignKey(User, related_name='debtor')
