@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class RequirementsConfig(AppConfig):
+class DebugConfig(AppConfig):
     name = 'debug'

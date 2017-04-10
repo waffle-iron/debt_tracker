@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Required Packages</title>
+</head>
+<body>
+<strong>Required Packages</strong>
+
+<ul style="list-style: none; padding-left: 0;">
+    {% for installed_package in installed_packages_list %}
+        <li>{{ installed_package }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
